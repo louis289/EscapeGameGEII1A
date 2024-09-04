@@ -1,0 +1,197 @@
+/* styles.css */
+
+/* Styles généraux */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#escape-game-container {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 90vh;
+    padding: 20px;
+    position: relative;
+}
+
+.fullscreen {
+    height: 100vh;
+}
+
+.enigme {
+    padding: 20px;
+}
+
+.enigme.with-media {
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.enigme h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff6666;
+    text-shadow: 0 0 10px rgba(255, 102, 102, 0.8);
+}
+
+.enigme p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* Réduire la taille des images et des vidéos par deux */
+.enigme-image,
+.quizimg,
+video {
+    max-height: 70vh;
+    /* Réduction de la taille par 2 */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 102, 102, 0.6);
+}
+
+.quizimglong {
+
+    max-height: 70vh;
+    /* Réduction de la taille par 2 */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 102, 102, 0.6);
+    max-width: 60vw;
+    /* Réduction spécifique pour les images de quiz */
+}
+
+.quizimg {
+    max-width: 25%;
+    /* Réduction spécifique pour les images de quiz */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 102, 102, 0.6);
+}
+
+/* Cacher les boutons radio et les cases à cocher */
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Styles pour les réponses sélectionnées */
+input[type="radio"]:checked+.option-label,
+input[type="checkbox"]:checked+.option-label {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px rgba(255, 102, 102, 0.6);
+}
+
+.option-label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 102, 0.6);
+}
+
+button:hover {
+    background-color: #e55b5b;
+}
+
+/* Positionnement fixe des boutons de navigation en bas de la page */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+}
+
+#precedent {
+    left: 20px;
+}
+
+#suivant {
+    right: 20px;
+}
+
+button.choix-btn {
+    background-color: #ff6666;
+    margin: 5px 0;
+}
+
+button.choix-btn:hover {
+    background-color: #e55b5b;
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff6666;
+    text-shadow: 0 0 10px rgba(255, 102, 102, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #escape-game-container {
+        width: 100%;
+    }
+
+    .navigation {
+        bottom: 10px;
+        width: 48%;
+    }
+
+    #precedent {
+        left: 1%;
+    }
+
+    #suivant {
+        right: 1%;
+    }
+}
+
+/* Ajout d'un léger dézoom pour améliorer la lisibilité */
+html {
+    zoom: 0.9;
+}
+
+
+.quiz-time {
+    margin: 20px 0;
+  }
+  .quiz-time input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .quiz-time button {
+    padding: 5px 10px;
+  }
+  

@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.enigme {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.plein-ecran {
+  height: 100%;
+  display: none;
+}
+
+.enigme-actif {
+  display: block;
+}
+
+/* Style pour l'image de l'énigme */
+.enigme-image {
+  display: block; /* Ajouté pour centrer l'image */
+  margin: 0 auto; /* Ajouté pour centrer l'image */
+  max-width: 100%;
+  /* Largeur maximale de l'image à 100% de la largeur du conteneur */
+  max-height: 70vh;
+  /* Hauteur maximale de l'image à 70% de la hauteur de la vue */
+  margin-bottom: 20px;
+  /* Marge inférieure pour espacement */
+}
+
+/* Styles pour les labels des options de réponse */
+.option-label {
+  cursor: pointer;
+  /* Affiche un curseur cliquable */
+  padding: 5px;
+  /* Espacement autour du label */
+}
+
+/* Style supplémentaire pour l'option sélectionnée */
+input[type="radio"]:checked + .option-label {
+  font-weight: bold;
+  /* Met en évidence l'option sélectionnée */
+}
+
+/* Styles pour les énigmes avec image */
+.with-image .enigme-image {
+  display: block; /* Ajouté pour centrer l'image */
+  margin: 0 auto; /* Ajouté pour centrer l'image */
+  max-width: 100%;
+  /* Largeur maximale de l'image à 100% de la largeur du conteneur */
+  max-height: 70vh;
+  /* Hauteur maximale de l'image à 70% de la hauteur de la vue */
+  margin-bottom: 20px;
+  /* Marge inférieure pour espacement */
+}

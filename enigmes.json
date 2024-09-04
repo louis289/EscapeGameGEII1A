@@ -1,0 +1,30 @@
+{
+    "introduction": {
+      "image": "introduction.jpg"
+    },
+    "enigme1": {
+      "image": "enigme1.jpg"
+    },
+    "enigme2": {
+      "image": "enigme2.jpg"
+    },
+    "enigme3": {
+      "image": "enigme3.jpg"
+    },
+    "enigme4": {
+      "image": "enigme4.jpg"
+    },
+    "niveauxSuperieurs": {
+      "image": "niveaux_superieurs.jpg"
+    },
+    "labo": {
+      "image": "labo.jpg"
+    },
+    "voiture": {
+      "image": "voiture.jpg"
+    },
+    "systemeAlarme": {
+      "image": "systeme_alarme.jpg"
+    }
+  }
+  
